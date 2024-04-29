@@ -7,6 +7,17 @@ public class Pet {
     private String name;
     private String ownerName;
 
+    @Override
+    public String toString() {
+        return "Pet {"
+                + "\n\ttype = " + type
+                + ", sex = " + sex
+                + ", age = " + age
+                + ", name = " + name
+                + ", ownerNAme = " + ownerName
+                + "\n}";
+    }
+
     public String getType() {
         return type;
     }
