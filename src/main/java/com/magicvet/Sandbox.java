@@ -2,12 +2,13 @@ package main.java.com.magicvet;
 
 import main.java.com.magicvet.comparator.DogSizeComparator;
 import main.java.com.magicvet.model.Dog;
+import main.java.com.magicvet.model.Pet;
 
 import java.util.Arrays;
 
 public class Sandbox {
     public static void main(String[] args) {
-        Dog[] dogs ={
+        Dog[] dogs = {
                 new Dog(Dog.M),
                 new Dog(Dog.S),
                 new Dog(Dog.XL),
@@ -17,8 +18,14 @@ public class Sandbox {
         };
         Arrays.sort(dogs, new DogSizeComparator());
 
-        for (Dog dog : dogs){
+        for (Dog dog : dogs) {
             System.out.println(dog.getSize());
+        }
+        Pet[] pet1 = { };
+        Arrays.sort(pet1);
+
+        for (Pet pet : pet1) {
+            System.out.println(pet1);
         }
     }
 }

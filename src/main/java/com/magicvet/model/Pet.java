@@ -7,6 +7,10 @@ public abstract class Pet {
     private String name;
     private String ownerName;
 
+    public String compare(Pet pet1) {
+        return this.age = pet1.age;
+    }
+
     @Override
     public String toString() {
         return "Pet {"

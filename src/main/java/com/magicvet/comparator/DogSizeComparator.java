@@ -9,6 +9,7 @@ public class DogSizeComparator implements Comparator<Dog> {
     public int compare(Dog dog1, Dog dog2) {
         return convertSize(dog1.getSize()) - convertSize(dog2.getSize());
     }
+
     private static int convertSize(String size) {
         return switch (size) {
             case Dog.XS -> 1;
@@ -18,5 +19,5 @@ public class DogSizeComparator implements Comparator<Dog> {
             case Dog.XL -> 5;
             default -> 0;
         };
+        }
     }
-}
