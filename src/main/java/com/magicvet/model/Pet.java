@@ -57,4 +57,21 @@ public abstract class Pet {
     public void setOwnerName(String ownerName) {
         this.ownerName = ownerName;
     }
+
+    public enum Health {
+        good("g"),
+        middle("m"),
+        bad("b")
+        ;
+
+        private final String healthState;
+        Health(String healthState) {
+            this.healthState = healthState;
+        }
+
+        public String getHealthState() {
+            return healthState;
+        }
+    }
+
 }
